@@ -37,3 +37,14 @@ cd atom
 script/grunt install --install-dir /opt/atom
 sudo ln -s /opt/atom/bin/atom /usr/local/bin
 ```
+## Setup go-fish shell
+```
+#
+curl -L https://github.com/bpinto/oh-my-fish/raw/master/tools/install.fish | fish
+
+```
+If missing config.sh
+```
+git clone git://github.com/bpinto/oh-my-fish.git ~/.oh-my-fish
+cp ~/.oh-my-fish/templates/config.fish ~/.config/fish/config.fish
+```
