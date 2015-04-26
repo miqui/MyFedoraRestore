@@ -73,7 +73,7 @@ uname -r
 ```
 reboot
 ```
-Install following depencies
+Install following dependencies
 ```
 ## CentOS 7 and RHEL 7 ##
 rpm -Uvh http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-5.noarch.rpm
