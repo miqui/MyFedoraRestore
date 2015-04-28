@@ -1,7 +1,7 @@
 ##Install google chrome
 ```
 cat << EOF > /etc/yum.repos.d/google-chrome.repo
-[google-chrome]
+ [google-chrome]
 name=google-chrome - \$basearch
 baseurl=http://dl.google.com/linux/chrome/rpm/stable/\$basearch
 enabled=1
@@ -98,4 +98,32 @@ usermod -a -G vboxusers user_name
 Start vbox
 ```
 VirtualBox
+```
+
+## Pycharm
+Trying to run pycharm...
+```
+OpenJDK Server VM warning: ignoring option MaxPermSize=250m; support was removed in 8.0
+[   1653]  ERROR - nse.impl.GeneralLicenseManager - No valid license found
+java.lang.Throwable
+    at com.intellij.openapi.diagnostic.Logger.error(Logger.java:115)
+    at com.intellij.ide.a.g.bb.a(bb.java:107)
+    at com.intellij.idea.MainImpl$1.start(MainImpl.java:47)
+    at com.intellij.idea.StartupUtil.prepareAndStart(StartupUtil.java:105)
+    at com.intellij.idea.MainImpl.start(MainImpl.java:42)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke(Method.java:483)
+    at com.intellij.ide.plugins.PluginManager$2.run(PluginManager.java:91)
+    at java.lang.Thread.run(Thread.java:745)
+[   1674]  ERROR - nse.impl.GeneralLicenseManager - PyCharm 4.0.4  Build #PY-139.1001
+[   1675]  ERROR - nse.impl.GeneralLicenseManager - JDK: 1.8.0_31
+[   1676]  ERROR - nse.impl.GeneralLicenseManager - VM: OpenJDK Server VM
+[   1676]  ERROR - nse.impl.GeneralLicenseManager - Vendor: Oracle Corporation
+[   1677]  ERROR - nse.impl.GeneralLicenseManager - OS: Linux
+```
+Then to get around this all you have to do is:
+```
+sudo dnf install java-1.8.0-openjdk
 ```
