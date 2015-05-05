@@ -127,3 +127,8 @@ Then to get around this all you have to do is:
 ```
 sudo dnf install java-1.8.0-openjdk
 ```
+
+Install Ruby
+```
+sudo yum install -y ruby
+```
