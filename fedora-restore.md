@@ -132,3 +132,10 @@ Install Ruby
 ```
 sudo yum install -y ruby
 ```
+
+Install docker
+```
+yum -y install docker-io
+systemctl start docker
+systemctl enable docker
+```
