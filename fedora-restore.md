@@ -139,3 +139,9 @@ yum -y install docker-io
 systemctl start docker
 systemctl enable docker
 ```
+* upgrade:
+```
+systemctl stop docker
+wget https://get.docker.com/builds/Linux/x86_64/docker-latest -O /usr/bin/docker
+systemctl start docker
+```
