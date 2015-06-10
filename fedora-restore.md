@@ -133,6 +133,8 @@ Install Ruby
 sudo yum install -y ruby
 ```
 
+##Docker
+
 Install docker
 ```
 yum -y install docker-io
@@ -144,4 +146,16 @@ systemctl enable docker
 systemctl stop docker
 wget https://get.docker.com/builds/Linux/x86_64/docker-latest -O /usr/bin/docker
 systemctl start docker
+```
+Behind a proxy
+edit /etc/sysconfig/docker
+```
+HTTP_PROXY="http://<proxy_host>:<proxy_port>"
+HTTPS_PROXY="https://<proxy_host>:<proxy_port>"
+http_proxy="${HTTP_PROXY}"
+https_proxy="${HTTPS_PROXY}"
+```
+then run
+```
+sudo service docker restart
 ```
