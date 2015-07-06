@@ -159,3 +159,17 @@ then run
 ```
 sudo service docker restart
 ```
+
+##Golang
+
+Set up your GOPATH
+
+If you did not create a GOPATH as part of installation, do so now. The GOPATH is a directory tree where all of your Go code will live. Here are the steps to do that:
+
+Make a directory: mkdir ~/gocode
+Tell Go to use that as your GOPATH: export GOPATH=~/gocode
+Save your GOPATH so that it will apply to all future shell sessions: echo export GOPATH=$GOPATH >> ~/.bash_profile
+Now your Go installation is complete.
+
+Install git and hg
+Git and Mercurial are required to allow go get to clone various dependencies.
