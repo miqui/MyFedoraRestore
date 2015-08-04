@@ -173,3 +173,9 @@ Now your Go installation is complete.
 
 Install git and hg
 Git and Mercurial are required to allow go get to clone various dependencies.
+
+## Go Fish Shell
+
+cd /etc/yum.repos.d/
+wget http://download.opensuse.org/repositories/shells:fish:release:2/Fedora_22/shells:fish:release:2.repo
+yum install fish
